@@ -49,7 +49,7 @@ public class MockHttpClient implements Client{
 
             if(url.contains("registration")){
                 mockResponse = getResponse("registrationResponse.txt");
-            }else if(url.contains("loginResponse.txt")) {
+            }else if(url.contains("login")) {
                 mockResponse = getResponse("loginResponse.txt");
             }else if(url.contains("account")){
                 mockResponse = getResponse("accountResponse.txt");

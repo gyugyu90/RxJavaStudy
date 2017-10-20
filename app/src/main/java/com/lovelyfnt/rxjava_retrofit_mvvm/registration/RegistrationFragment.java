@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.lovelyfnt.rxjava_retrofit_mvvm.HomeActivity;
 import com.lovelyfnt.rxjava_retrofit_mvvm.R;
 import com.lovelyfnt.rxjava_retrofit_mvvm.base.BaseFragment;
 import com.lovelyfnt.rxjava_retrofit_mvvm.data.AuthenticationManager;
@@ -76,8 +77,9 @@ public class RegistrationFragment extends BaseFragment{
     }
 
     private void launchHomeActivity(){
-//        Intent intent = new Intent(getActivity(), HomeAc)
-        Log.d("launch ", "home activity!");
+        Intent intent = new Intent(getActivity(), HomeActivity.class);
+        startActivity(intent);
+        getActivity().finish();
     }
 
     public void registerButtonTap(View view){

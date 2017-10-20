@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.lovelyfnt.rxjava_retrofit_mvvm.data.PrivateSharedPreferencesManager;
+import com.lovelyfnt.rxjava_retrofit_mvvm.login.LoginFragment;
 import com.lovelyfnt.rxjava_retrofit_mvvm.registration.RegistrationFragment;
 
 
@@ -36,7 +37,7 @@ public class LandingActivity extends AppCompatActivity {
         }else{
             setTitle("Login");
             Log.d("hello", "world2");
-            initialFragment = new RegistrationFragment();
+            initialFragment = new LoginFragment();
         }
 
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, initialFragment).commit();
